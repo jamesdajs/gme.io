@@ -10,9 +10,35 @@
     <meta property="og:url" content="api.hegaro.com.bo">
     <meta property="og:type" content="website">
     <!-- Fin de etiquetas Open Graph -->
-    <title>Título de tu página</title>
-</head>
-<body>
-    <!-- Contenido de tu página -->
-</body>
-</html>
+    <title>HEGARO</title>
+    <style>
+        body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .contenedor {
+        width: 100vw; /* Ancho del contenedor igual al 100% del viewport width */
+        height: 100vh; /* Alto del contenedor igual al 100% del viewport height */
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        overflow: hidden; /* Ocultar cualquier parte de la imagen que se desborde */
+    }
+    .imagen {
+        width: 100%; /* El 100% del ancho del contenedor */
+    height: 60vh; /* El 60% del alto del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el tamaño del contenedor */
+    clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%); /* Recorta un 20% de la parte superior e inferior */
+  }
+    </style>
+    </head>
+    <body>
+    
+    <div class="contenedor">
+      <img class="imagen" src="public/img/hegaro.png"Tu imagen">
+    </div>
+    
+    </body>
+    </html>
